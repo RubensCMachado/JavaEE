@@ -18,7 +18,7 @@ public class TesteInsertDadosDao {
 		} catch (Exception e) {
 			System.out.println("erro ao gravar Cliente!");			
 		} finally {
-			dao.FecharConexao();
+			dao.fecharConexao();
 		}
 		
 	}

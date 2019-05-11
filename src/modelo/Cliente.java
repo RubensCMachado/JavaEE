@@ -6,6 +6,27 @@ public class Cliente {
 	private String email;
 	private String endereco;
 	
+	public Cliente() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Cliente(Long id) {
+		this.id = id;
+	}
+	
+	public Cliente(Long id, String nome, String email, String endereco) {
+		this.id = id;
+		this.nome = nome;
+		this.email = email;
+		this.endereco = endereco;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Cliente [id=" + id + ", nome=" + nome + ", email=" + email + ", endereco=" + endereco + "]";
+	}
+	
 	public Long getId() {
 		return id;
 	}
